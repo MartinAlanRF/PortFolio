@@ -1,0 +1,49 @@
+#proyecto{
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+/* Imagenes de los proyectos */
+
+#proyecto1 {
+    background-image: url('../../assets/proyectos/proyecto2-crud.jpg');
+    max-width: 600px;
+    min-height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+#proyecto2 {
+    background-image: url('../../assets/proyectos/proyecto2-crud.jpg');
+    max-width: 600px;
+    min-height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#proyecto3 {
+    background-image: url('../../assets/proyectos/proyecto3-dashboard.jpg');
+    max-width: 600px;
+    min-height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#proyecto4 {
+    background-image: url('../../assets/proyectos/proyecto4-restaurant.jpg');
+    max-width: 500px;
+    min-height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
