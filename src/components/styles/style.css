@@ -8,7 +8,7 @@
 /* Imagenes de los proyectos */
 
 #proyecto1 {
-    background-image: url('../../assets/proyectos/proyecto2-crud.jpg');
+    background-image: url('../../assets/proyectos/proyecto1-landing.jpg');
     max-width: 600px;
     min-height: 300px;
     background-size: contain;
@@ -46,4 +46,72 @@
     background-repeat: no-repeat;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#containerTituloh1 h1,
+#containerTituloh3 h3,
+#containerTituloh2 h2   {
+
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    /* Se toma de base una imagen para sobre saltar de mejor manera
+        la sobra que se le dara al cuadro donde se encuentra el h3 */
+    background: url("../../assets/pxgray.png");
+    /* Para generar un efecto de sobra tipo 3d se hizo uso de varias
+    sombrar intensifancando cada vez mas en un 1px, esto se puede ir 
+    haciendo por partes probando a su vez que hace cada sombra */
+    box-shadow: 0px 1px 0px #232425,
+        1px 2px 0px #232425,
+        2px 3px 0px #232425,
+        3px 4px 0px #232425;
+    font-size: 30px;
+}
+
+.containerTecImgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#html5{
+    width: 140px;
+    height: 120px;
+}
+
+#css{
+    width: 110px;
+    height: 120px;
+}
+
+#javascript{
+    width: 250px;
+    height: 120px;
+}
+
+#reactjs{
+    width: 190px;
+    height: 120px;
+}
+
+
+#boostrap{
+    width: 155px;
+    height: 120px;
+}
+
+#github{
+    width: 150px;
+    height: 120px;
+}
+
+#mongo{
+    width: 250px;
+    height: 120px;
+}
+
+#node{
+    width: 250px;
+    height: 120px;
 }
