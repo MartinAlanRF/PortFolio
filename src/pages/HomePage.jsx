@@ -13,9 +13,9 @@ import imgGithub from "../assets/tecnologias/githublogo.png";
 const HomePage = () => {
   return (
     <>
-      <div className="home mb-4">
+      <div className="home">
         {/* Card Profile */}
-        <div className="containerCard">
+        <div id='profile' className="containerCard mb-4">
           <div className="card">
             <div className="profile-image">
               <img id='imgProfile' src={imgProfile} alt="" srcset="" />
@@ -34,6 +34,10 @@ const HomePage = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                   <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
                 </svg> Banderilla, Veracruz.
+                <br />
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                  <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+                </svg>Curriculum vitae
               </p>
               <div className="icons">
               <a href="https://www.linkedin.com/in/martin-alan-rodriguez-fisher">
@@ -54,13 +58,20 @@ const HomePage = () => {
         </div>
         {/* END */}
         {/* Projects */}
-        <div id="proyectos">
+        <div id="projects">
+          
+          <div className="containerCenter">
+            <div className="headers">
+                <h2>PROYECTOS DESARROLLADOS </h2>
+              </div>
+          </div>
+
           <div className="container-fluid">
-            <div id="proyecto" className="row d-flex justify-content-center align-items-center mt-2">
-              <div id="proyecto1" className="col-lg-6 order-lg-2 text-white"></div>
-              <div className="col-lg-6 order-lg-1 my-auto p-5 text-justify seccionText">
+            <div id="proyecto" className="row d-flex justify-content-center align-items-center mt-2 text-justify">
+              <div id="proyecto1" className="col-lg-6 order-lg-2"></div>
+              <div className="col-lg-6 order-lg-1 my-auto p-5 ">
                 <h2 className="text-center">LANDING DE NEGOCIO</h2>
-                <p className="lead mb-0 text-justify">
+                <p className="lead mb-0">
                   Proyecto enfocado en la construcción de una página (landing)
                   para un negocio implementado las herramientas de desarrollo
                   web, html, css y boostrap 5 para la creación de este mismo.
@@ -84,10 +95,7 @@ const HomePage = () => {
                 </a>
               </div>
             </div>
-            <div
-              id="proyecto"
-              className="row d-flex justify-content-center align-items-center mt-2"
-            >
+            <div id="proyecto" className="row d-flex justify-content-center align-items-center mt-2">
               <div
                 id="proyecto2"
                 className="col-lg-6 order-lg-1 text-white seccionProducto2"
@@ -95,22 +103,28 @@ const HomePage = () => {
               <div className="col-lg-6 order-lg-2 my-auto p-5 text-justify seccionText">
                 <h2 className="text-center">CRUD JAVASCRIPT</h2>
                 <p className="lead mb-0">
-                  Proyecto web enfocado en el desarrollo de una webApp-CRUD
-                  mediante javascript con localStorage, HTML5, CSS3 y BOOSTRAP
-                  5.
+                  Proyecto web enfocado en el desarrollo de una webApp-CRUD mediante 
+                  javascript con localStorage, HTML5, CSS3 y BOOSTRAP 5.
                 </p>
                 <a type="button" className="btn btn-dark col-md-12 mt-2" href="https://github.com/MartinAlanRF/MartinAlanRF.github.io">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    class="bi bi-github"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                  </svg>{" "}
+                  <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>{" "}
                   VER REPOSITORIO
+                </a>
+                <a type="button" className="btn btn-light col-md-12 mt-2" href="https://martinalanrf.github.io/">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                  </svg>
+                  IR AL SITIO EN GITHUB PAGES
                 </a>
               </div>
             </div>
@@ -168,14 +182,27 @@ const HomePage = () => {
                   </svg>{" "}
                   VER REPOSITORIO
                 </a>
+                <a type="button" className="btn btn-light col-md-12 mt-2" href="https://elsabordeveracruz.netlify.app/">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                  </svg>
+                  IR AL SITIO EN NETLIFY
+                </a>
               </div>
             </div>
           </div>
         </div>
         {/* END PROJECTS */}
         {/* TECHNOLOGIES */}
-        <div className="container">
-          <h1>TECNOLOGÍAS </h1>
+        <div id='technologies' className="container">
+
+          <div className="containerCenter">
+            <div className="headers">
+                <h2>TECNOLOGÍAS MAS UTILIZADAS </h2>
+              </div>
+          </div>
+
           <div className="row mb-3">
             <div className=" containerTecImgs col-xl-3 col-sm-6 col-12">
               <div id="containerTituloh3" className="container text-center mt-1">
@@ -271,6 +298,8 @@ const HomePage = () => {
           </div>
         </div>
         {/* END TECHNOLOGIES */}
+
+        {/* HABILIDADES BLANDAS */}
       </div>
 
 
