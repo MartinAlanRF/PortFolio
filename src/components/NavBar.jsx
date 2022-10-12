@@ -6,10 +6,13 @@ const NavBar = () => {
   return (
     <nav className=" mx-auto navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container">
-      <a className="navbar-brand" href="/">
-     {/*  <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt width={30} height={24} /> */}
-        PORTFOLIO
-      </a>
+      <NavLink to='/' className='navbar-brand'>
+        <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="currentColor" className="bi bi-briefcase" viewBox="0 0 16 16">
+          <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+        </svg>
+          Porfolio        
+      </NavLink>
+
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#menuResponsive"  aria-label="Toggle navigation">
         <span className="navbar-toggler-icon" />
@@ -29,34 +32,13 @@ const NavBar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-          <NavLink
-                to="/menu"
-                aria-current="page"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-              >
-              MENÚ
-          </NavLink>
+
           </li>
           <li className="nav-item">
-          <NavLink
-                to="/reservation"
-                aria-current="page"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-              >
-              RESERVACIONES
-          </NavLink>
+
           </li>
         </ul>
-        <ul className="navbar-nav  mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link" href="/">
-                Iniciar sesión</a>
-            </li> 
-        </ul>
+
       </div>
     </div>
   </nav>

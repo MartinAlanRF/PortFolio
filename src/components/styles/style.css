@@ -1,11 +1,70 @@
-#proyecto{
+/* #proyecto{
     border: 5px;
     border-style: solid;
     border-color: black;
+} */
+
+#root{
+    background: rgb(2,0,36);
+    background: linear-gradient(75deg, rgba(2,0,36,1) 0%, rgba(232,219,219,1) 17%, rgb(118, 178, 190) 100%);
 }
 
+/*Profile style*/
+.containerCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Imagenes de los proyectos */
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.292);
+    border-radius: 25px;
+    box-shadow:  0 0 20px;
+}
+
+.card > p{
+    text-align: justify;
+    text-decoration: none;
+
+}
+
+.profile-image{
+    margin: 20px;
+}
+
+#imgProfile{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 20px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icons > a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* .icons > a:link, a:visited {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  } */
+  
+
+/* Projects images */
 
 #proyecto1 {
     background-image: url('../../assets/proyectos/proyecto1-landing.jpg');
@@ -15,6 +74,10 @@
     background-repeat: no-repeat;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#proyecto1 > p{
+    text-align: justify;
 }
 
 
@@ -28,6 +91,10 @@
     margin-bottom: 5px;
 }
 
+#proyecto2 > p{
+    text-align: justify;
+}
+
 #proyecto3 {
     background-image: url('../../assets/proyectos/proyecto3-dashboard.jpg');
     max-width: 600px;
@@ -36,6 +103,10 @@
     background-repeat: no-repeat;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+#proyecto3 > .text-p{
+    text-align: justify;
 }
 
 #proyecto4 {
@@ -48,6 +119,13 @@
     margin-bottom: 5px;
 }
 
+
+#proyecto4 > p{
+    text-align: justify;
+}
+
+
+/* Headers style */
 #containerTituloh1 h1,
 #containerTituloh3 h3,
 #containerTituloh2 h2   {
@@ -68,6 +146,7 @@
     font-size: 30px;
 }
 
+/*  */
 .containerTecImgs{
     display: flex;
     flex-direction: column;
@@ -115,3 +194,6 @@
     width: 250px;
     height: 120px;
 }
+
+
+/* MEDIA QUERYS */
