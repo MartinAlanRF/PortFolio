@@ -3,10 +3,14 @@
     border-style: solid;
     border-color: black;
 } */
+.body{
+    
+}
 
 #root{
     background: rgb(2,0,36);
     background: linear-gradient(75deg, rgba(2,0,36,1) 0%, rgba(232,219,219,1) 17%, rgb(118, 178, 190) 100%);
+    background-size: contain;
 }
 
 /* HomeContainer */
@@ -229,6 +233,11 @@
     height: 120px;
 }
 
+/* HomeContainer */
+.about{
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
 
 /* MEDIA QUERYS */
 

@@ -20,7 +20,7 @@ const NavBar = () => {
       <div className="collapse navbar-collapse" id="menuResponsive">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-{/*             <NavLink
+            <NavLink
               end
                 to="/"
                 aria-current="page"
@@ -29,10 +29,22 @@ const NavBar = () => {
                 }
               >
               INICIO
-            </NavLink> */}
-            <a className="nav-link active" href="#profile">
+            </NavLink>
+ {/*            <a className="nav-link active" href="#profile">
               INICIO
-            </a>
+            </a> */}
+          </li>
+          <li className="nav-item">
+{/*             <NavLink
+              end
+                to="/about"
+                aria-current="page"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+              INICIO
+            </NavLink> */}
           </li>
           <li className="nav-item">
             <a className="nav-link "  href="#projects">
@@ -48,7 +60,7 @@ const NavBar = () => {
 
       </div>
     </div>
-  </nav>
+    </nav>
   );
 };
 
