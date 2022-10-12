@@ -1,11 +1,3 @@
-/* #proyecto{
-    border: 5px;
-    border-style: solid;
-    border-color: black;
-} */
-.body{
-    
-}
 
 #root{
     background: rgb(2,0,36);
@@ -26,8 +18,8 @@
     justify-content: center;
     align-items: center;
 }
-
-.card{
+/* Card style */
+.containerCard > .card{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,22 +31,23 @@
     box-shadow:  0 0 20px;
 }
 
-.card > p{
+.containerCard > .card > p{
     text-align: justify;
     text-decoration: none;
-
 }
 
 .profile-image{
     margin: 20px;
 }
 
+/* Profile IMG */
 #imgProfile{
     max-width: 200px;
     max-height: 200px;
     border-radius: 20px;
 }
 
+/* Icons styles */
 .icons{
     display: flex;
     flex-direction: row;
@@ -66,14 +59,7 @@
     text-decoration: none;
     color: black;
 }
-
-/* .icons > a:link, a:visited {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-  } */
   
-
 /* Projects images */
 
 #proyecto1 {
@@ -180,18 +166,14 @@
 }
 
 
-/*  */
+/* Technoliges style */
 .containerTecImgs{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-
+/* imgs skill */
 #html5{
     width: 140px;
     height: 120px;
@@ -233,10 +215,54 @@
     height: 120px;
 }
 
-/* HomeContainer */
-.about{
-    margin-top: 70px;
-    margin-bottom: 40px;
+
+/* Education */
+.containerCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.headerCardEducation{
+    width: 95%;
+}
+
+.containerCards > .card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 57%;
+    height: auto;
+    background-color: #ffffff86;
+    border-radius: 15px;
+    box-shadow:  0 0 20px;
+}
+
+.containerCards > .card >.card-body{
+   display: flex;
+   flex-direction: row;
+  /*  //justify-content: center; */
+   align-items: center;
+}
+
+#text-card{
+    text-align: center;
+    margin: 40px;
+    font-size: 20px;
+}
+
+#itsxlogo{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#ucamplogo{
+    max-width: 180px;
+    max-height: 150px;
 }
 
 /* MEDIA QUERYS */

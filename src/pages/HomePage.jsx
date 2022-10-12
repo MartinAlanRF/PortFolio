@@ -1,6 +1,7 @@
 import React from "react";
 /* Importando imagenes  */
 import imgProfile from "../assets/fotoPerfil.jpg";
+/* Technologies */
 import imgHTML5 from "../assets/tecnologias/html5logo.png";
 import imgCSS from "../assets/tecnologias/css3logo.png";
 import imgJava from "../assets/tecnologias/javascriptlogo.png";
@@ -9,7 +10,9 @@ import imgBoostrap from "../assets/tecnologias/boostraplogo.png";
 import imgMongo from "../assets/tecnologias/mongodblogo.png";
 import imgNode from "../assets/tecnologias/nodejslogo.png";
 import imgGithub from "../assets/tecnologias/githublogo.png";
-
+/* Education logos */
+import imgITSX from "../assets/education/ITSX-Logo.png";
+import imgUcamp from "../assets/education/ucamp-logo.png";
 const HomePage = () => {
   return (
     <>
@@ -309,8 +312,60 @@ const HomePage = () => {
         {/* HABILIDADES BLANDAS */}
 
         {/* EDUCATION */}
+        <div className="containerCards">
+          <div className="card">
+            <div className="card-header text-center headerCardEducation">
+                <h4>INSTITUTO TECNOLOGICO SUPERIOR DE XALAPA</h4>
+            </div>
+            <div className="card-body">
+              <img id='itsxlogo' src={imgITSX} alt="" srcset="" />
+              <div id="text-card">
+              <p className="">
+                <strong> Ingeniería en Sistemas Computacionales</strong>
+                <br />
+                Ingeniería de Software
+                <strong></strong>
+              </p>
+              </div>
 
-          
+            </div>
+          </div>
+
+          <div className="card">
+            <div  className="card-header text-center headerCardEducation">
+              <h4>UTEL UCAMP</h4>
+            </div>
+            <div className="card-body">
+              <img id='ucamplogo' src={imgUcamp} alt="" srcset="" />
+              <div id="text-card">
+                <p>
+                  <strong>Bootcamp</strong>
+                  <br />
+                  Desarrollo web fullstack
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+{/*           <div className="card">
+            <div className="card-header">
+              Quote
+            </div>
+            <div className="card-body">
+              <blockquote className="blockquote mb-0">
+                <p>A well-known quote, contained in a blockquote element.</p>
+                <footer className="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+          </div> */}
+
+
+        </div>
+
+
+
+        {/*END EDUCATION */}
 
       </div>
 
