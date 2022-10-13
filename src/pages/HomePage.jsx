@@ -95,7 +95,7 @@ const HomePage = () => {
                 </p>
                 <a
                   type="button"
-                  className="btn btn-dark col-md-12 mt-2"
+                  className="btn btn-dark col-12 mt-2"
                   href="https://github.com/MartinAlanRF/Proyecyo1-Landing-de-negocio"
                 >
                   <svg
@@ -110,18 +110,10 @@ const HomePage = () => {
                   </svg>
                   VER REPOSITORIO
                 </a>
-
-
               </div>
             </div>
-            <div
-              id="proyecto"
-              className="row d-flex justify-content-center align-items-center mt-2"
-            >
-              <div
-                id="proyecto2"
-                className="col-lg-6 order-lg-1 text-white seccionProducto2"
-              ></div>
+            <div id="proyecto" className="row d-flex justify-content-center align-items-center">
+              <div id="proyecto2" className="col-lg-6 order-lg-1 text-white seccionProducto2"></div>
               <div className="col-lg-6 order-lg-2 my-auto p-5 text-justify seccionText">
                 <h2 className="text-center">CRUD JAVASCRIPT</h2>
                 <p className="lead mb-0">
@@ -132,7 +124,7 @@ const HomePage = () => {
 
                 <a
                   type="button"
-                  className="btn btn-dark col-md-12 mt-2"
+                  className="btn btn-dark col-12 mt-2"
                   href="https://github.com/MartinAlanRF/MartinAlanRF.github.io"
                 >
                   <svg
@@ -149,7 +141,7 @@ const HomePage = () => {
                 </a>
                 <a
                   type="button"
-                  className="btn btn-light col-md-12 mt-2"
+                  className="btn btn-light col-12 mt-2"
                   href="https://martinalanrf.github.io/"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
@@ -164,14 +156,9 @@ const HomePage = () => {
                   </svg>
                   IR AL SITIO EN GITHUBPAGES
                 </a>
-
-
               </div>
             </div>
-            <div
-              id="proyecto"
-              className="row d-flex justify-content-center align-items-center mt-2"
-            >
+            <div id="proyecto" className="row d-flex justify-content-center align-items-center">
               <div id="proyecto3" className="col-lg-6 order-lg-2"></div>
               <div className="col-lg-6 order-lg-1 my-auto p-5 text-justify seccionText">
                 <h2 className="text-center">DASHBOARD </h2>
@@ -183,7 +170,7 @@ const HomePage = () => {
                 </p>
                 <a
                   type="button"
-                  className="btn btn-dark col-md-12 mt-2"
+                  className="btn btn-dark col-12 mt-2"
                   href="https://github.com/GinTip/dashboard.github.io"
                 >
                   <svg
@@ -201,7 +188,7 @@ const HomePage = () => {
 
                 <a
                   type="button"
-                  className="btn btn-light col-md-12 mt-2"
+                  className="btn btn-light col-12 mt-2"
                   href="https://gintip.github.io/dashboard.github.io/Public/"
                 >
                   <svg
@@ -240,7 +227,7 @@ const HomePage = () => {
                 </p>
                 <a
                   type="button"
-                  className="btn btn-dark col-md-12 mt-2"
+                  className="btn btn-dark col-12 mt-2"
                   href="https://github.com/MartinAlanRF/Restaurant-App"
                 >
                   <svg
@@ -257,7 +244,7 @@ const HomePage = () => {
                 </a>
                 <a
                   type="button"
-                  className="btn btn-light col-md-12 mt-2"
+                  className="btn btn-light col-12 mt-2"
                   href="https://elsabordeveracruz.netlify.app/"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
