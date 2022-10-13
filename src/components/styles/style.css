@@ -267,6 +267,22 @@
 
 /* MEDIA QUERYS */
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
+    .containerCard > .card {
+        flex-direction: column;
+        width: 70%;
+    }
+    .icons{
+        margin-bottom: 20px;
+    }
+}
 
+
+@media (max-width: 770px) {
+    .containerCard > .card {
+        width: 90%;
+    }
+    .icons{
+        margin-bottom: 20px;
+    }
 }
