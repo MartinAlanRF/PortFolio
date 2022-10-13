@@ -391,7 +391,7 @@ const HomePage = () => {
         {/* EDUCATION */}
         <div className="containerCenter">
             <div className="headers">
-              <h2>INFORMACIÓN ACADEMICA</h2>
+              <h2>FORMACIÓN ACADEMICA</h2>
             </div>
           </div>
         <div className="containerCards">
