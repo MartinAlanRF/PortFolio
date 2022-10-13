@@ -221,7 +221,7 @@
 .containerCards > .card >.card-body{
    display: flex;
    flex-direction: row;
-  /*  //justify-content: center; */
+   justify-content: center;
    align-items: center;
 }
 
@@ -284,6 +284,18 @@
         margin-bottom: -40px;
         margin-top: -30px;
     }
+
+    .containerCards > .card {
+        margin: 10px;
+        width: 90%;
+    }
+
+    .containerCards > .card >.card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
 }
 
 
@@ -293,5 +305,11 @@
     }
     .icons{
         margin-bottom: 20px;
+    }
+    #itsxlogo{
+        margin-top: 20px;
+    }
+    #ucamplogo {
+        margin-top: 20PX;
     }
 }

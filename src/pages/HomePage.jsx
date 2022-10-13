@@ -389,7 +389,13 @@ const HomePage = () => {
         {/* HABILIDADES BLANDAS */}
 
         {/* EDUCATION */}
+        <div className="containerCenter">
+            <div className="headers">
+              <h2>INFORMACIÓN ACADEMICA</h2>
+            </div>
+          </div>
         <div className="containerCards">
+          
           <div className="card">
             <div className="card-header text-center headerCardEducation">
               <h4>INSTITUTO TECNOLOGICO SUPERIOR DE XALAPA</h4>
